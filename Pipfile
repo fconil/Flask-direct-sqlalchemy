@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+
+[packages]
+mymodels = {editable = true,path = "./dbmodels"}
+myflaskapp = {editable = true,path = "./flaskapp"}
+
+[requires]
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
